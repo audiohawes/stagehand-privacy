@@ -89,19 +89,19 @@
     fonts from Google Fonts, so the browser of the person who opens it connects to Google.</li>
     <li><strong>Printing.</strong> Labels print directly to a connected Brother P-touch printer over
     USB or Bluetooth.</li>
-    <li><strong>Reading a document (optional, Mac).</strong> Stagehand can read a rider, input list, stage
-    plot, schedule or hire quote and fill in your show. If you use this, the document you choose is
-    sent to <strong>Anthropic’s Claude service</strong> (<code>api.anthropic.com</code>) using
-    <strong>your own Anthropic API key</strong>, billed to your own Anthropic account, and handled
-    under <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic’s
-    privacy policy</a>. This feature does nothing until you add your own key, and you pick which
-    document to read each time. Only that document is sent — nothing else.</li>
+    <li><strong>Reading a document (Mac).</strong> Stagehand can read a rider, input list, stage plot,
+    schedule or hire quote and fill in your show. By default this uses Apple’s on-device model, and
+    nothing leaves your Mac. If you choose to turn on the Claude reader in Settings and add
+    <strong>your own Anthropic API key</strong>, the document you pick is sent to Anthropic
+    (<code>api.anthropic.com</code>), billed to your own Anthropic account and handled under
+    <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic’s
+    privacy policy</a>. Only that document is sent.</li>
   </ul>
 
   <h2>Documents you import</h2>
   <p>When you import a rider, plot or show file, Stagehand reads it to fill in your show and keeps the
-  file on your device. The only time an imported document is sent anywhere is the optional reader
-  described above, and only to Anthropic under your own account.</p>
+  file on your device. An imported document is only sent anywhere if you have turned on the Claude
+  reader described above.</p>
 
   <h2>Children</h2>
   <p>Stagehand is a professional tool and is not directed at children.</p>
