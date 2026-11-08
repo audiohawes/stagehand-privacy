@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Stagehand Support</title>
+<style>
+  :root{
+    --bg:#fbfaf7; --fg:#1d1a16; --muted:#6c655b; --accent:#b0472b;
+    --card:#ffffff; --line:#e8e2d9; --code:#f1ece4;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#15130f; --fg:#ece7de; --muted:#9a9388; --accent:#e37e5f;
+      --card:#1f1c16; --line:#2f2b23; --code:#241f18; color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#15130f; --fg:#ece7de; --muted:#9a9388; --accent:#e37e5f;
+    --card:#1f1c16; --line:#2f2b23; --code:#241f18; color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:46rem;margin:0 auto;padding-block:3rem 4rem;
+    padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right));}
+  header{border-bottom:2px solid var(--fg);padding-bottom:1rem;margin-bottom:2rem}
+  .eyebrow{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:0 0 .4rem}
+  h1{font-size:2rem;margin:0;font-weight:800;letter-spacing:-.01em;text-wrap:balance}
+  .lede{color:var(--muted);font-size:1.05rem;margin-top:.7rem}
+  h2{font-size:1.15rem;font-weight:700;margin:2.4rem 0 .7rem;letter-spacing:-.01em}
+  p{margin:.7rem 0}
+  ul{margin:.6rem 0;padding-left:1.2rem}
+  li{margin:.5rem 0}
+  a{color:var(--accent)}
+  strong{font-weight:700}
+  .card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);
+    border-radius:.5rem;padding:1.1rem 1.3rem;margin:1.5rem 0}
+  .card h2{margin-top:0}
+  .email{font-size:1.15rem;font-weight:700}
+  .email a{text-decoration:none}
+  code{background:var(--code);padding:.08em .35em;border-radius:.3rem;font-size:.9em}
+  footer{margin-top:3rem;padding-top:1.4rem;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Stagehand</p>
+    <h1>Support</h1>
+    <p class="lede">The show-day tool for live-audio engineers and stage techs.</p>
+  </header>
+
+  <div class="card">
+    <h2>Get in touch</h2>
+    <p>The fastest way to get help, report a bug, or ask for a feature is email. I read every message and usually reply within a day or two.</p>
+    <p class="email"><a href="mailto:dan@audiohawes.com.au">dan@audiohawes.com.au</a></p>
+  </div>
+
+  <h2>If you're a beta tester</h2>
+  <p>In TestFlight, take a screenshot inside the app — TestFlight lets you send it straight to me with a note. That's the easiest way to show me what's wrong or what you'd like changed. You can also just email the address above.</p>
+
+  <h2>A few common questions</h2>
+  <ul>
+    <li><strong>Where do I start?</strong> Open the <strong>“Example — Northbound Autumn Tour”</strong> demo (sample data, nothing real) and look around the patch, the stage plot, the RF page and the schedule.</li>
+    <li><strong>Where does my show data live?</strong> On your own device. Stagehand has no account and no server of ours. See the <a href="https://audiohawes.github.io/stagehand-privacy/">Privacy Policy</a>.</li>
+    <li><strong>How do I move a show between my devices?</strong> Stagehand syncs between your own devices over your local Wi-Fi — no account needed.</li>
+    <li><strong>Can it print labels?</strong> Yes — stage-box and in-ear labels print to a Brother P-touch over USB or Bluetooth.</li>
+    <li><strong>What's the “Read a Document” reader?</strong> It fills in your show from a rider or plot. It uses your own Anthropic API key, is off until you add one, and sends nothing unless you use it.</li>
+  </ul>
+
+  <h2>Privacy</h2>
+  <p>Read how Stagehand handles your information: <a href="https://audiohawes.github.io/stagehand-privacy/">Privacy Policy</a>.</p>
+
+  <footer>Stagehand · AudioHawes · <a href="mailto:dan@audiohawes.com.au">dan@audiohawes.com.au</a></footer>
+</div>
+</body>
+</html>
