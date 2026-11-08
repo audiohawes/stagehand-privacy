@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Stagehand Privacy Policy</title>
+<style>
+  :root{
+    --bg:#fbfaf7; --fg:#1d1a16; --muted:#6c655b; --accent:#b0472b;
+    --card:#ffffff; --line:#e8e2d9; --code:#f1ece4;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#15130f; --fg:#ece7de; --muted:#9a9388; --accent:#e37e5f;
+      --card:#1f1c16; --line:#2f2b23; --code:#241f18; color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#15130f; --fg:#ece7de; --muted:#9a9388; --accent:#e37e5f;
+    --card:#1f1c16; --line:#2f2b23; --code:#241f18; color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:46rem;margin:0 auto;padding-block:3rem 4rem;
+    padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right));}
+  header{border-bottom:2px solid var(--fg);padding-bottom:1rem;margin-bottom:2rem}
+  .eyebrow{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:0 0 .4rem}
+  h1{font-size:2rem;margin:0;font-weight:800;letter-spacing:-.01em;text-wrap:balance}
+  .updated{color:var(--muted);font-size:.9rem;margin-top:.6rem}
+  h2{font-size:1.15rem;font-weight:700;margin:2.4rem 0 .7rem;letter-spacing:-.01em}
+  p{margin:.7rem 0}
+  ul{margin:.6rem 0;padding-left:1.2rem}
+  li{margin:.5rem 0}
+  a{color:var(--accent)}
+  strong{font-weight:700}
+  .tldr{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);
+    border-radius:.5rem;padding:1.1rem 1.3rem;margin:1.5rem 0}
+  .tldr h2{margin-top:0}
+  code{background:var(--code);padding:.08em .35em;border-radius:.3rem;font-size:.9em}
+  footer{margin-top:3rem;padding-top:1.4rem;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Stagehand</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 8 November 2026</p>
+  </header>
+
+  <p>Stagehand is a show-day tool for live-audio engineers and stage techs, made by Dan Hawes
+  (AudioHawes). This policy explains what the app does with your information.</p>
+
+  <div class="tldr">
+    <h2>The short version</h2>
+    <p>Your show data stays on your own devices. Stagehand has no servers of ours, no accounts,
+    and no tracking. The only time anything leaves your device is when <em>you</em> choose to —
+    by syncing to your own nearby devices, sharing a pack you export, printing a label, or using
+    the optional document reader (which uses your own Anthropic account).</p>
+  </div>
+
+  <h2>What Stagehand stores</h2>
+  <p>Everything you build — input lists and patches, stage plots, wireless plans, running orders,
+  counts, and any show files you import — is stored <strong>locally on your device</strong> (and in
+  your own iCloud or Files storage if you keep it there). We never receive a copy.</p>
+
+  <h2>What we collect</h2>
+  <p><strong>Nothing.</strong> Stagehand has no analytics, no advertising, no trackers, no sign-in,
+  and no user accounts. There is no server of ours that receives your data.</p>
+
+  <h2>When data leaves your device — only when you choose</h2>
+  <ul>
+    <li><strong>Local sync.</strong> Stagehand can sync a show between your <em>own</em> devices over
+    your local Wi-Fi network. This is device-to-device and does not pass through any server of ours.</li>
+    <li><strong>Sharing.</strong> When you export an advance pack, or share a show as a PDF or a single
+    self-contained web page, that file goes wherever you send it. You choose who receives it.</li>
+    <li><strong>Printing.</strong> Labels print directly to a connected Brother P-touch printer over
+    USB or Bluetooth.</li>
+    <li><strong>Reading a document (optional).</strong> Stagehand can read a rider, input list, stage
+    plot, schedule or hire quote and fill in your show. If you use this, the document you choose is
+    sent to <strong>Anthropic’s Claude service</strong> (<code>api.anthropic.com</code>) using
+    <strong>your own Anthropic API key</strong>, billed to your own Anthropic account, and handled
+    under <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic’s
+    privacy policy</a>. This feature does nothing until you add your own key, and you pick which
+    document to read each time. Only that document is sent — nothing else.</li>
+  </ul>
+
+  <h2>Documents you import</h2>
+  <p>When you import a rider, plot or show file, Stagehand reads it to fill in your show and keeps the
+  file on your device. The only time an imported document is sent anywhere is the optional reader
+  described above, and only to Anthropic under your own account.</p>
+
+  <h2>Children</h2>
+  <p>Stagehand is a professional tool and is not directed at children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, we will update this page and the “last updated” date above.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy? Email Dan Hawes at
+  <a href="mailto:dan@fohp.com.au">dan@fohp.com.au</a>.</p>
+
+  <footer>Stagehand · AudioHawes · This page may be hosted at your own domain; the content is the policy that applies to the Stagehand app.</footer>
+</div>
+</body>
+</html>
