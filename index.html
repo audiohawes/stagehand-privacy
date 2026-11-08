@@ -58,10 +58,9 @@
 
   <div class="tldr">
     <h2>The short version</h2>
-    <p>Your show data stays on your own devices. Stagehand has no servers of ours, no accounts,
-    and no tracking. The only time anything leaves your device is when <em>you</em> choose to —
-    by syncing to your own nearby devices, sharing a pack you export, printing a label, or using
-    the optional document reader (which uses your own Anthropic account).</p>
+    <p>Your show data is kept on your own devices. Stagehand has no online service of ours, no
+    accounts, and no tracking. Data only leaves your device when you use a feature that needs it.
+    Those features are listed below.</p>
   </div>
 
   <h2>What Stagehand stores</h2>
@@ -77,11 +76,20 @@
   <ul>
     <li><strong>Local sync.</strong> Stagehand can sync a show between your <em>own</em> devices over
     your local Wi-Fi network. This is device-to-device and does not pass through any server of ours.</li>
+    <li><strong>Other local network features.</strong> On the local network, Stagehand can connect to
+    wireless receivers to read their status and set frequencies. On the Mac, the day-sheet QR code and
+    Stage View can show a sheet or board in a browser on the same network. Each uses a private link,
+    and only runs while you use that feature (the QR code stops after a few minutes).</li>
+    <li><strong>Google Drive live sheet (optional, Mac).</strong> If you turn this on, Stagehand writes
+    a spreadsheet of the production to your Google Drive folder. Google Drive then stores it under your
+    own Google account and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google’s
+    privacy policy</a>.</li>
     <li><strong>Sharing.</strong> When you export an advance pack, or share a show as a PDF or a single
-    self-contained web page, that file goes wherever you send it. You choose who receives it.</li>
+    web page, that file goes wherever you send it. You choose who receives it. The web page loads its
+    fonts from Google Fonts, so the browser of the person who opens it connects to Google.</li>
     <li><strong>Printing.</strong> Labels print directly to a connected Brother P-touch printer over
     USB or Bluetooth.</li>
-    <li><strong>Reading a document (optional).</strong> Stagehand can read a rider, input list, stage
+    <li><strong>Reading a document (optional, Mac).</strong> Stagehand can read a rider, input list, stage
     plot, schedule or hire quote and fill in your show. If you use this, the document you choose is
     sent to <strong>Anthropic’s Claude service</strong> (<code>api.anthropic.com</code>) using
     <strong>your own Anthropic API key</strong>, billed to your own Anthropic account, and handled
@@ -105,7 +113,7 @@
   <p>Questions about privacy? Email Dan Hawes at
   <a href="mailto:dan@audiohawes.com.au">dan@audiohawes.com.au</a>.</p>
 
-  <footer>Stagehand · AudioHawes · This page may be hosted at your own domain; the content is the policy that applies to the Stagehand app.</footer>
+  <footer>Stagehand · AudioHawes</footer>
 </div>
 </body>
 </html>
